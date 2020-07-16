@@ -1,10 +1,44 @@
 # 环境
-- 开发工具：IDEA
+- 开发工具：IDEA  HBuilderX
 - JDK版本：java version "1.8.0_201"
 - 数据库版本：MySQL Server version: 8.0.15
 - 服务器：Tomcat 9.0.29
 
 
+# 数据库设计说明
+
+### article_info 表
+
+| 栏位      | 说明         |
+| --------- | ------------ |
+| a_id      | 文章id       |
+| a_title   | 文章题目     |
+| a_cid   | 文章分类id     |
+| a_date    | 文章发布日期 |
+| a_date    | 文章最后修改日期 |
+| a_context | 文章内容     |
+| a_view    | 文章浏览次数 |
+| a_del     | 删除标志     |
+
+### class_info 表
+
+| 栏位              | 说明           |
+| ----------------- | -------------- |
+| class_id          | 分类id         |
+| class_name        | 分类名字       |
+| class_del         | 删除标志       |
+
+### remark_info 表
+
+| 栏位           | 说明       |
+| -------------- | ---------- |
+| remark_id      | 评论id     |
+| remark_aid  | 评论文章id |
+| remark_name  | 评论者姓名  |
+| remark_name  | 评论者邮箱  |
+| remark_date  | 评论日期  |
+| remark_context | 评论内容   |
+| remark_del   | 删除标志   |
 
 
 
