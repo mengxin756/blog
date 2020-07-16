@@ -7,23 +7,15 @@
 
 # 数据库设计说明
 
-### achieve_info 表
-
-| 栏位          | 说明         |
-| ------------- | ------------ |
-| achieve_id    | 归档id       |
-| achieve_title | 归档文章题目 |
-| achieve_date  | 归档日期     |
-
 ### article_info 表
 
 | 栏位      | 说明         |
 | --------- | ------------ |
-| a_title   | 文章题目     |
-| a_tag     | 文章标签     |
-| a_class   | 文章分类     |
-| a_date    | 文章发布日期 |
 | a_id      | 文章id       |
+| a_title   | 文章题目     |
+| a_cid   | 文章分类id     |
+| a_date    | 文章发布日期 |
+| a_date    | 文章最后修改日期 |
 | a_context | 文章内容     |
 | a_view    | 文章浏览次数 |
 | a_del     | 删除标志     |
@@ -33,8 +25,7 @@
 | 栏位              | 说明           |
 | ----------------- | -------------- |
 | class_id          | 分类id         |
-| class_name        | 文章描述       |
-| class_article_num | 分类中文章数量 |
+| class_name        | 分类名字       |
 | class_del         | 删除标志       |
 
 ### remark_info 表
@@ -42,21 +33,12 @@
 | 栏位           | 说明       |
 | -------------- | ---------- |
 | remark_id      | 评论id     |
-| remark_v_name  | 评论者姓名 |
+| remark_aid  | 评论文章id |
+| remark_name  | 评论者姓名  |
+| remark_name  | 评论者邮箱  |
+| remark_date  | 评论日期  |
 | remark_context | 评论内容   |
-| remark_v_id    | 评论者id   |
-
-
-### visitor_info 表
-
-| 栏位           | 说明       |
-| -------------- | ---------- |
-| visitor_id     | 访客id     |
-| visitors_email | 访客邮箱   |
-| visitor_name   | 访客姓名   |
-| visitor_phone  | 访客手机号 |
-
-
+| remark_del   | 删除标志   |
 
 
 
